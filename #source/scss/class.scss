@@ -148,7 +148,7 @@ li.counter {
     svg{
         display: none;  
     }
-    background-image: url(img/svg/x.svg);
+    background-image: url("img/svg/x.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-repeat: contain;
@@ -330,7 +330,7 @@ li.counter {
 }
 }
   .filt-bg{
-      background: url(img/filt-bg.png) center center/ contain no-repeat ;
+      background: url("img/filt-bg.png") center center/ contain no-repeat ;
       background-color: $grey;
       position: relative;
     
@@ -475,7 +475,7 @@ li.counter {
             border: 1px solid #000000;
             transition: all 0.5s;
             opacity: 0;
-            background-image: url(img/icons/check-h.svg);
+            background-image: url("img/icons/check-h.svg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -500,7 +500,7 @@ li.counter {
         .checkbox:checked + .checkbox__label::before{
             transition:  0.4s;
             background-color: $light_red;
-            background-image: url(img/icons/check-a.svg);
+            background-image: url("img/icons/check-a.svg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -720,7 +720,7 @@ input::-webkit-inner-spin-button {
         height: 18px;
         left: calc(50% - 9px);
         top: calc(50% - 9px);
-        background-image: url(img/select-arrow.svg);
+        background-image: url("img/select-arrow.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
