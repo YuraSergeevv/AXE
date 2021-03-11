@@ -110,7 +110,7 @@
     transition: 0.4;
     &::after{
         content: "";
-        background-image: url(/img/icons/search.svg);
+        background-image: url(img/icons/search.svg);
         background-position: center;
         background-size: cover;
          background-repeat: no-repeat;
@@ -284,7 +284,7 @@
     width: 28px;
     height: 25px;
     margin-right: 35px;
-    background-image: url(/img/icons/like.svg);
+    background-image: url(img/icons/like.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -302,7 +302,7 @@
     margin-bottom: 3px;
     width: 27px;
     height: 23px;
-    background-image: url(/img/icons/basket.svg);
+    background-image: url(img/icons/basket.svg);
     position: relative;
 }
 .basket__block{
