@@ -1,0 +1,331 @@
+.header {
+    margin-bottom: 50px;
+}
+.container {
+}
+.header__row {
+ padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 10;
+    background: #ffffff;
+    .like-basket__block {
+        display: none;
+    }
+    @media (max-width:1024px) {
+       margin-bottom: 0px;
+       flex-wrap: wrap;
+       .like-basket__block {
+        display: block;
+        display: flex;
+        .icon__like{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    }
+    @media (max-width:400px) {
+        flex-direction: column;
+        
+     }
+     @media (max-width:400px) {
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        .like-basket__block {
+            width: 100%;
+        margin-top: 20px;
+       align-self: start;
+         .icon__like{
+          margin: 0 25px;
+         }
+        .menu__btn{
+            margin-right: auto;
+           }
+           .basket__block{
+               margin: 0;
+           }
+     }
+     }
+}
+
+.logo {
+    width: 330px;
+    height: 55px;
+    @media (max-width:1200px) {
+       width: 285px;
+       height: 45px;
+    }
+    @media (max-width:500px) {
+        width: 190px;
+        height: 35px;
+     }
+     @media (max-width:400px) {
+        width: 285px;
+        height: 45px;
+     }
+}
+.img-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.header__search {
+    width: 255px;
+    margin-left: 25px;
+    position: relative;
+    @media (max-width:1024px) {
+    margin: 15px 0 0 10px;
+    }
+    @media (max-width:740px) {
+       order: 3;
+       width: 100%;
+    } 
+    @media (max-width:400px) {
+        order: 3;
+        width: 100%;
+     }
+    
+}
+.header__input {
+    width: 100%;
+    padding: 5px 55px 5px 5px;
+    border-bottom: 2px solid $grey;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+   
+} 
+
+.header__search-btn{
+    position:absolute;
+    background-color:$light_red;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    right: 7px;
+    transition: 0.4;
+    &::after{
+        content: "";
+        background-image: url(/img/icons/search.svg);
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        width: 14px;
+        height: 14px;        
+    }
+    &:hover{
+        transition: 0.4;
+    }
+}
+.header__contact {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+    @media (max-width:1024px) {
+        display: none;
+    }
+}
+.header__phone {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #000000;
+}
+.header__social .icon-social {
+   margin-left: 15px;
+   &:first-of-type{
+       margin-left: 36px;
+   }
+}
+.icon-social {
+    transition: 0.4s;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    &:hover{
+        fill: $light_red;
+    }
+}
+.icon{
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    &:hover{
+        fill: $light_red;
+    }
+}
+.telegram {
+  
+}
+.whatsapp {
+  
+}
+.skype {
+   
+}
+.menu__wrapp{
+    position: relative;
+    .header__contact {
+        display: none;
+        @media (max-width:1024px) {
+            display: block;
+            .icon-social{
+               margin-top: 15px;
+               margin-bottom: 15px;
+            }
+            .telegram{
+                margin-left: 15px;
+            }
+
+        }
+    }
+}
+.menu__btn{
+    display: none;
+    margin-left: 15px;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 10;
+   
+    span , &::after, &::before{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+    }
+    span{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &::after{
+        top: 0;
+    }
+    &::before{
+        bottom: 0;
+    }
+    @media (max-width:1024px) {
+       display: block;
+       }
+}
+
+
+.menu__row {
+    
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1024px) {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        z-index: 5;
+        margin: 0;
+        transform: translateY(-500%);
+        transition: 0.5s;
+    }
+}
+
+.active{
+    transition: 0.5s;
+    transform: translateY(0);
+    }
+.menu {
+   
+}
+.menu__list {
+    display: flex;
+    @media (max-width:1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+.menu__item {
+    margin-right: 36px;
+    @media (max-width:1024px) {
+        margin: 0;
+        margin-bottom: 30px;
+    
+      }   
+}
+.menu__link {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.like-basket__block {
+    display: flex;
+    align-items: flex-end;
+    @media (max-width:1024px) {
+       display: none;
+      }
+}
+.icon__like {
+    margin-bottom: 3px;
+    width: 28px;
+    height: 25px;
+    margin-right: 35px;
+    background-image: url(/img/icons/like.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-right: 36px;
+    @media (max-width:1024px) {
+       margin: 0 auto;
+       }
+
+}
+.like__counter {
+    background-color: #575757;
+}
+.icon__basket {
+    margin-bottom: 3px;
+    width: 27px;
+    height: 23px;
+    background-image: url(/img/icons/basket.svg);
+    position: relative;
+}
+.basket__block{
+    display: flex;
+    align-items: flex-end;
+    @media (max-width:1024px) {
+        margin: 0 auto;
+        }
+}
+.basket__counter {
+    background-color: $light_red;
+    top: -9px;
+    right: -9px;
+}
+.basket__text {
+    margin-left: 2px;
+    @media (max-width:1024px) {
+        display: none;
+        }
+}
+.light-red {
+    
+    font-weight: 700;
+    font-size: 15px;
+    color: $light_red;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная</title>
+    <!-- Подключение CSS -->
+
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+        <!-- @import "header.kit" -->
+        <div class="main__wrapp">
+            <div class="container">
+                <div class="__page-img">
+                    <img src="/img/axe-group/axe-3.png" alt="" class="page__img">
+                    <div class="axe-ico">
+                        <div class="axe-icon">
+                            <img class="axe-icon" src="/img/axe-group/eye.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumbs-wrap">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <span>Каталог</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog__text-group">
+                <div class="container">
+                    <h1 class="catalog__name">Уход за глазами </h1>
+                    <p class="catalog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="catalog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="filter-product__wrapp">
+                <div class="container ">
+                    <div class="filter-product__row">
+                        <div class="filters__wrap">
+                            <h4 class="filter__title filt-bg">Фильтры <span class="filter__close"></span></h4>
+                            <h5 class="filter__title">функционал</h5>
+                            <div class="check__block">
+                                <input type="checkbox" class="checkbox" id=checkbox_1>
+                                <label for="checkbox_1" class="checkbox__label">eyes cure
+                                    <span class="under">Лечение глаз</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_2>
+                                <label for="checkbox_2" class="checkbox__label">eyes cure Kids
+                                    <span class="under">Лечение глаз для детей</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_3>
+                                <label for="checkbox_3" class="checkbox__label">lowvison care glass
+                                    <span class="under">Для низской видимости</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_4>
+                                <label for="checkbox_4" class="checkbox__label">loupe (magnifying glass)
+                                    <span class="under">Увеличительное линзы</span></label>
+                            </div>
+
+                            <h5 class="filter__title">Стиль</h5>
+                            <div class="check__block">
+                                <input type="checkbox" class="checkbox" id=checkbox_5>
+                                <label for="checkbox_5" class="checkbox__label man-s">Мужские
+                                    <span class="man">MEN’s</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_6>
+                                <label for="checkbox_6" class="checkbox__label ladys-s">Женские
+                                    <span class="ladys">LADY’s</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_7>
+                                <label for="checkbox_7" class="checkbox__label unisex-s">Унисекс
+                                    <span class="unisex">UNISEX</span></label>
+                                <input type="checkbox" class="checkbox" id=checkbox_8>
+                                <label for="checkbox_8" class="checkbox__label kids-s">Детские
+                                    <span class="kids">KID’s</span></label>
+                            </div>
+
+                            <h5 class="filter__title">Цена</h5>
+
+
+                            <div class="check__block">
+                                <div class="filter-price__inputs">
+                                    <label class="filter-price__label">
+                                        <input type="number" min="500" max="999999" placeholder="1000"
+                                            class="filter-price__input" id="input-0">
+
+                                    </label>
+                                    <span>-</span>
+                                    <label class="filter-price__label">
+                                        <input type="number" min="500" max="999999" placeholder="30000"
+                                            class="filter-price__input" id="input-1">
+
+                                    </label>
+                                </div>
+
+                                <div class="filter-price__slider" id="range-slider"> </div>
+                            </div>
+
+
+
+
+                            <a href="#" class="filter-img">
+                                <img src="/img/filter-3.png" alt="">
+                                <span class="filter-name">УХОД ЗА ГЛАЗАМИ</span>
+                                <span class="filter-details">Подробнее>></span>
+                            </a>
+                            <a href="#" class="filter-img">
+                                <img src="/img/filter-4.png" alt="">
+                                <span class="filter-name">защита для глаз</span>
+                                <span class="filter-details">Подробнее>></span>
+                            </a>
+                        </div>
+                        <div class="products__wrap">
+                            <div class="sort-count__block">
+                                <div class="filter__btn btn">Фильтры</div>
+                                <div class="sort-column">
+                                    <div class="sort-text"> Сортировать по:</div>
+                                    <div class="select">
+                                        <div class="select__header">
+                                            <span class="select__current">Популярности<span
+                                                    class="current__arrow"></span></span>
+                                            <div class="select__icon"></div>
+                                        </div>
+                                        <div class="select__body">
+                                            <div class="select__item">Популярности<span class="select__arrow"><span>
+                                            </div>
+                                            <div class="select__item ">Цене <span class="select__arrow"><svg
+                                                        class="icon">
+                                                        <use xlink:href="img/svg/sprite.svg#catalog-price__arrow-up">
+                                                        </use>
+                                                    </svg></span></div>
+                                            <div class="select__item ">Цене <span class="select__arrow"><svg
+                                                        class="icon">
+                                                        <use xlink:href="img/svg/sprite.svg#catalog-price__arrow-down">
+                                                        </use>
+                                                    </svg></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count-colum">Товаров:<span class="red">28</span></div>
+                            </div>
+                            <div class="products__inner">
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-1.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">Lt-964r</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                            <a href="#" class="kids">KID’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-2.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">jh-123p</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-3.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">iot-41q</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-4.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">wr-789q</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-5.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">br-455(t)</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-6.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">ewt-963</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-7.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">asd-555</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-8.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">zxc-456q</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-9.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">hod-230f</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+                                <div class="__item">
+                                    <div class="like-hit__row">
+                                        <a href="#" class="like"></a>
+                                        <div class="hit__group">
+                                            <a href="#" class="hit">HIT</a>
+                                            <a href="#" class="man">MEN’s</a>
+                                            <a href="#" class="lady">LADY’s</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="product__img"><img src="/img/eye_catalog/eye_item-10.png"
+                                            alt=""></a>
+                                    <a href="#" class="product__name">ipv-351(f)</a>
+                                    <p class="product__subname">Очки</p>
+                                    <p class="product__last-prise">3 000.00 р.</p>
+                                    <p class="product__prise">2 500.00 р.</p>
+                                    <a href="#" class="btn red">В корзину</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- @import "footer.kit" -->
+        </div>
+
+        <!-- @import "popup.kit" -->
+
+        <!-- @import "bottom.kit" -->
+
+</body>
+
+</html>
