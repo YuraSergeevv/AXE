@@ -223,6 +223,70 @@ $(document).ready(function () {
 
     select();
 
+    let orderSelect = function () {
+        let selectHeader = document.querySelectorAll('.select__header-order');
+        let selectItem = document.querySelectorAll('.select__item-order');
+
+        selectHeader.forEach(item => {
+            item.addEventListener('click', selectToggle)
+        });
+
+        selectItem.forEach(item => {
+            item.addEventListener('click', selectChoose)
+        });
+
+
+
+        function selectToggle() {
+            this.parentElement.classList.toggle('is-active');
+        }
+
+        function selectChoose() {
+            let text = this.innerHTML,
+                select = this.closest('.select-order'),
+                currentText = select.querySelector('.select__current-order');
+            currentText.innerHTML = text;
+            select.classList.remove('is-active');
+
+        }
+
+    };
+
+
+    orderSelect();
+
+    let citySelect = function () {
+        let selectHeader = document.querySelectorAll('.select__header-city ');
+        let selectItem = document.querySelectorAll('.select__item-city');
+
+        selectHeader.forEach(item => {
+            item.addEventListener('click', selectToggle)
+        });
+
+        selectItem.forEach(item => {
+            item.addEventListener('click', selectChoose)
+        });
+
+
+
+        function selectToggle() {
+            this.parentElement.classList.toggle('is-active');
+        }
+
+        function selectChoose() {
+            let text = this.innerHTML,
+                select = this.closest('.select-city'),
+                currentText = select.querySelector('.select__current-city');
+            currentText.innerHTML = text;
+            select.classList.remove('is-active');
+
+        }
+
+    };
+
+
+    citySelect();
+
 
 
 
@@ -238,7 +302,31 @@ $(document).ready(function () {
     })
 
 
+    ///Basket///
+
+    $(".basket__count-inner").each(function () {
+        let $quantityArrowMinus = $(this).find(".minus");
+        let $quantityArrowPlus = $(this).find(".plus");
+        let $quantityNum = $(this).find('.basket__count')
+
+        $quantityArrowMinus.click(quantityMinus);
+        $quantityArrowPlus.click(quantityPlus);
+
+        function quantityMinus() {
+            if ($quantityNum.val() > 1) {
+                $quantityNum.val(+$quantityNum.val() - 1);
+            }
+        }
+
+        function quantityPlus() {
+            if ($quantityNum.val() < 30000) {
+                $quantityNum.val(+$quantityNum.val() + 1);
+            }
+        }
+    });
+
 });
+
 
 'use strict'
 $(document).ready(function () {

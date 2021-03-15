@@ -148,7 +148,7 @@ li.counter {
     svg{
         display: none;  
     }
-    background-image: url(img/svg/x.svg);
+    background-image: url(/img/svg/x.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-repeat: contain;
@@ -189,6 +189,7 @@ li.counter {
   }
 
 .btn {
+    cursor: pointer;
     font-family: Oswald;
     font-weight: bold;
     font-size: 20px;
@@ -200,6 +201,7 @@ li.counter {
     border: 1px solid $light_red;
     margin: 0 auto;
     display: inline-block;
+    background: #ffffff;
   }
 
 
@@ -213,6 +215,9 @@ li.counter {
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
+    @media(max-width: 767px){
+        margin-top: 40px;
+      } 
   }
   .mt-60{
       margin-top: 60px;
@@ -227,6 +232,14 @@ li.counter {
     margin-top: 60px;
     margin-bottom: 30px; 
     text-align: center;
+    @media(max-width: 767px){
+        margin-top: 30px;
+        font-size: 36px;
+      } 
+      @media(max-width: 500px){
+        margin-top: 30px;
+        font-size: 24px;
+      } 
   }
   .page__subtile {
     margin-bottom: 15px;
@@ -330,7 +343,7 @@ li.counter {
 }
 }
   .filt-bg{
-      background: url(img/filt-bg.png) center center/ contain no-repeat ;
+      background: url(/img/filt-bg.png) center center/ contain no-repeat ;
       background-color: $grey;
       position: relative;
     
@@ -475,7 +488,7 @@ li.counter {
             border: 1px solid #000000;
             transition: all 0.5s;
             opacity: 0;
-            background-image: url(img/icons/check-h.svg);
+            background-image: url(/img/icons/check-h.svg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -500,7 +513,7 @@ li.counter {
         .checkbox:checked + .checkbox__label::before{
             transition:  0.4s;
             background-color: $light_red;
-            background-image: url(img/icons/check-a.svg);
+            background-image: url(/img/icons/check-a.svg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -720,7 +733,7 @@ input::-webkit-inner-spin-button {
         height: 18px;
         left: calc(50% - 9px);
         top: calc(50% - 9px);
-        background-image: url(img/select-arrow.svg);
+        background-image: url(/img/select-arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -792,9 +805,11 @@ input::-webkit-inner-spin-button {
 }
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 60px;
     @media(max-width: 600px){
         margin-bottom: 30px;
+       
       }  
     a,span{
         font-size: 15px;
@@ -804,6 +819,7 @@ input::-webkit-inner-spin-button {
         color: #575757;
         padding-right: 5px;
         position: relative;
+        margin: 5px 0;
         &::after{
             content: " >";
             color: #000000;
@@ -811,6 +827,7 @@ input::-webkit-inner-spin-button {
     }
     span{
         color: $light_red;
+        margin: 5px 0;
     }
     
 }

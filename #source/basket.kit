@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+        <!-- @import "header.kit" -->
+        <div class="main-wrapp">
+            <div class="breadcrumbs-wrap">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <span>Корзина</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="page__name">Корзина</h1>
+            <div class="basket__wrapp-card">
+                <div class="basket__column-left">
+                    <div class="basket__img-block">
+                        <div class="basket__img-inner">
+                            <img class="basket__img" src="img/card__item/color-1.png" alt="">
+                        </div>
+                        <span class="basket__img-delete">Удалить</span>
+                    </div>
+                    <div class="basket__name-block">
+                        <p class="basket__name">Ax990-w cm</p>
+                        <p class="basket__subname">Маска горнолыжная</p>
+                    </div>
+                </div>
+                <div class="basket__column-right">
+                    <div class="basket___one-block">
+                        <p class="basket__column-name">Цена</p>
+                        <p class="basket__price-one">9 900.00 р.</p>
+                    </div>
+                    <div class="basket___count-block">
+                        <p class="basket__column-name">Количество</p>
+                        <div class="basket__count-inner">
+                            <button class="count-btn minus">-</button>
+                            <input type="number" class="basket__count" value="2">
+                            <button class="count-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="basket___sum-block">
+                        <p class="basket__column-name">Цена</p>
+                        <p class="basket__price-sum">19 800.00 р.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__wrapp-card">
+                <div class="basket__column-left">
+                    <div class="basket__img-block">
+                        <div class="basket__img-inner">
+                            <img class="basket__img" src="img/card__item/color-2.png" alt="">
+                        </div>
+                        <span class="basket__img-delete">Удалить</span>
+                    </div>
+                    <div class="basket__name-block">
+                        <p class="basket__name">Ax800-wcm</p>
+                        <p class="basket__subname">Маска горнолыжная </p>
+                    </div>
+                </div>
+                <div class="basket__column-right">
+                    <div class="basket___one-block">
+                        <p class="basket__column-name">Цена</p>
+                        <p class="basket__price-one">8 900.00 р.</p>
+                    </div>
+                    <div class="basket___count-block">
+                        <p class="basket__column-name">Количество</p>
+                        <div class="basket__count-inner">
+                            <button class="count-btn minus">-</button>
+                            <input type="number" class="basket__count" value="1">
+                            <button class="count-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="basket___sum-block">
+                        <p class="basket__column-name">Цена</p>
+                        <p class="basket__price-sum">8 900.00 р.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__wrapp-total">
+                <div class="basket__wrapp-promo">
+                    <div class="basket__promo-in">
+                        <div class="text-in">Введите промокод</div>
+                        <input class="promo-input" type="text" name="" id="">
+                    </div>
+                    <button class="basket__promo-btn">Применить</button>
+                </div>
+                <div class="basket__total">
+                    <div class="basket__total-group">
+                        <p class="basket__total-text">Товаров на суму:</p>
+                        <p class="basket__total-text">Доставка:</p>
+                        <p class="basket__total-title">Итого к оплате:</p>
+                    </div>
+                    <div class="basket__total-group">
+                        <p class="basket__total-price">28 700 р.</p>
+                        <p class="basket__total-price">0 р.</p>
+                        <p class="basket__total-tprice">28 700 р.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__wrapp-btn">
+                <a href="#" class="basket__btn">Продолжить</a>
+            </div>
+            <div class="basket__wrapp-order">
+                <div class="basket__inner-order">
+                    <p class="basket__order-title">Оформление заказа</p>
+                    <p class="order-in">Ваше имя</p>
+                    <input class="order-input" type="text">
+                    <p class="order-in">Ваш E-mail</p>
+                    <input class="order-input" type="text">
+                    <p class="order-in">Ваш Телефон</p>
+                    <input class="order-input" type="text">
+                    <p class="order-in">Адрес доставки</p>
+                    <input class="order-input" type="text">
+                    <p class="order-in">Примечание</p>
+                    <textarea class="order-textarea" name="" id="" cols="20" rows="4"></textarea>
+                    <p class="order-in">Способ доставки</p>
+                    <div class="select-order">
+                        <div class="select__header-order">
+                            <div class="select__current-order">Пошта-1</div>
+                            <div class="select__icon-order"></div>
+                        </div>
+                        <div class="select__body-order">
+                            <div class="select__item-order">Пошта-1</div>
+                            <div class="select__item-order">Пошта-2</div>
+                            <div class="select__item-order">Пошта-3</div>
+                        </div>
+                    </div>
+                    <p class="order-in">Способ оплаты</p>
+                    <div class="select-order">
+                        <div class="select__header-order">
+                            <div class="select__current-order">Оплата-1</div>
+                            <div class="select__icon-order"></div>
+                        </div>
+                        <div class="select__body-order">
+                            <div class="select__item-order">Оплата-1</div>
+                            <div class="select__item-order">Оплата-2</div>
+                            <div class="select__item-order">Оплата-3</div>
+                        </div>
+                    </div>
+                    <div class="order-btn btn">Заказ подтверждаю</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @import "footer.kit" -->
+    </div>
+
+    <!-- @import "popup.kit" -->
+
+    <!-- @import "bottom.kit" -->
+
+</body>
+
+</html>
