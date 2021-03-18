@@ -1086,6 +1086,7 @@ input::-webkit-inner-spin-button {
   .header__row {
     margin-bottom: 0px;
     flex-wrap: wrap;
+    margin: 0 10px;
   }
   .header__row .like-basket__block {
     width: 100%;
