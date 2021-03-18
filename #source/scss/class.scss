@@ -176,7 +176,9 @@ li.counter {
 }
 .cnt{
     padding: 0 30px;
-   // background-color: #818181;  
+    @media (max-width: 767px) {
+       padding: 0 10px;
+      }
   }
 .red{
     color: $light_red;

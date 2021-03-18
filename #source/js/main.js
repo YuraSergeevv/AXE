@@ -31,18 +31,71 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+
+                }
+            },
+        ]
     });
 
 
     $('.slider__product').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            },
+        ]
     });
 
 
     $('.slider__news').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            },
+        ]
     });
 
 
@@ -50,6 +103,25 @@ $(document).ready(function () {
     $('.about__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 551,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            },
+        ]
+
     });
 
     $('.axe-group').each(function () {

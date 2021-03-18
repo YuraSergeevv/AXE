@@ -58,6 +58,8 @@
 .youtube {
 }
 .footer__column {
+    position: relative;
+    z-index: 1;
     margin: 0 50px;
    &.mr{
         margin-right: 90px;
@@ -193,7 +195,7 @@
     left: 50%;
     transform: translate(-50%, 50%);
     opacity: 0.1;
-    z-index: 1;
+    z-index: 0;
 }
 .footer__agreement {
     position: relative;
