@@ -183,6 +183,9 @@ li.counter {
 .red{
     color: $light_red;
 }
+.bold{
+    font-weight: 700;
+}
 .btn-center{
     display: flex;
     justify-content: center;
@@ -438,6 +441,10 @@ li.counter {
             text-transform: initial;
             color: #61C4BC;
         }
+        &.tenns-s, .new-s {
+            text-transform: initial;
+            color: #C6000C ;
+        }
 
         .man {
            
@@ -464,6 +471,10 @@ li.counter {
         .tenns {
           
             background-color: #61C4BC;
+        }
+        .new {
+           
+            background-color: #C6000C ;
         }
         
         &::after{
