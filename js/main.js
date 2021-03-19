@@ -123,11 +123,43 @@ $(document).ready(function () {
     });
 
     $('.axe-group').each(function () {
-        let tog = $(this).find('.slider__product')
+        let tog = $(this).find('.slider__product');
         $(this).find('.axe-block').on('click tochend', function () {
             tog.toggle(500);
         })
     });
+
+
+
+
+
+
+    $(document).ready(function () {
+        footerToggle();
+    });
+
+    $(window).resize(function () {
+        footerToggle();
+    });
+
+    function footerToggle() {
+        if ($(window).innerWidth() < 500) {
+            $('.footer__column').each(function () {
+                let tog = $(this).find('.footer__info');
+                $(this).find('.footer__title').on('click tochend', function () {
+                    tog.toggle(500);
+                    return false;
+                })
+            });
+        } else {
+            $('.footer__column').each(function () {
+                let tog = $(this).find('.footer__info');
+                $(this).find('.footer__title').off();
+            });
+        }
+    }
+
+
 
     // $('.card__item-slider').slick({
     //     slidesToShow: 3,
