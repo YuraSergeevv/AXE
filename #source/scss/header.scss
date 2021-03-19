@@ -111,7 +111,7 @@
     transition: 0.4;
     &::after{
         content: "";
-        background-image: url(/img/icons/search.svg);
+        background-image: url("../img/icons/search.svg");
         background-position: center;
         background-size: cover;
          background-repeat: no-repeat;
