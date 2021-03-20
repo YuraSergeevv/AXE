@@ -199,6 +199,16 @@ $(document).ready(function () {
         asNavFor: '.slider-for',
         vertical: true,
         verticalSwiping: true,
+        responsive: [
+            {
+                breakpoint: 551,
+                settings: {
+                    slidesToShow: 1,
+                    vertical: false,
+                    verticalSwiping: false,
+                }
+            },
+        ]
     });
 
     $('[data-fancybox]').fancybox({
@@ -215,6 +225,16 @@ $(document).ready(function () {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 asNavFor: '.fslider-for',
+                responsive: [
+                    {
+                        breakpoint: 551,
+                        settings: {
+                            slidesToShow: 1,
+                            vertical: false,
+                            verticalSwiping: false,
+                        }
+                    },
+                ]
             });
 
         },
@@ -379,7 +399,37 @@ $(document).ready(function () {
     citySelect();
 
 
+    let select_tr = function () {
+        let selectHeader = document.querySelectorAll('.select__header-tr');
+        let selectItem = document.querySelectorAll('.select__item-tr');
 
+        selectHeader.forEach(item => {
+            item.addEventListener('click', selectToggle)
+        });
+
+        selectItem.forEach(item => {
+            item.addEventListener('click', selectChoose)
+        });
+
+
+
+        function selectToggle() {
+            this.parentElement.classList.toggle('is-active');
+        }
+
+        function selectChoose() {
+            let text = this.innerHTML,
+                select = this.closest('.select-tr'),
+                currentText = select.querySelector('.select__current-tr');
+            currentText.innerHTML = text;
+            select.classList.remove('is-active');
+
+        }
+
+    };
+
+
+    select_tr();
 
 
     /*Filter */
@@ -416,12 +466,22 @@ $(document).ready(function () {
         }
     });
 
-    if (window.width() <= 1024) { // проверяешь расширении
+    if ($(window).width() <= 1024) { // проверяешь расширении
         //.div - это куда нужно переместить
         // .titleProduct - что нужно переместить 
-        $('.card__item-column-l').prepend('.card__item__title-block');
+        $('.card__item-column-l').prepend($('.card__item__title-block'));
     }
 
+    if ($(window).width() <= 1024) { // проверяешь расширении
+        //.div - это куда нужно переместить
+        // .titleProduct - что нужно переместить 
+        $('.card__item-column-r').prepend($('.card__item__block-icon-wrapp'));
+    }
+    if ($(window).width() <= 1024) { // проверяешь расширении
+        //.div - это куда нужно переместить
+        // .titleProduct - что нужно переместить 
+        $('.card__item-column-l').append($('.card__item-price_btn'));
+    }
 });
 
 

@@ -348,7 +348,7 @@ li.counter {
 }
 }
   .filt-bg{
-      background: url(/img/filt-bg.png) center center/ contain no-repeat ;
+      background: url("../img/filt-bg.png") center center/ contain no-repeat ;
       background-color: $grey;
       position: relative;
     
@@ -530,8 +530,13 @@ li.counter {
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+            border: none;
             opacity: 1;
         }
+        .checkbox:checked + .checkbox__label::after{
+           border: none;
+        }
+
 
 
   }
