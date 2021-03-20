@@ -1461,8 +1461,9 @@ color: #000000;
   }
   .card-item-column-r__inner{
     width: 70%;
-    @media (max-width:1024px){
+    @media (max-width:1200px){
       margin-left: 15px;
+      padding-right: 15px;
       width: 100%;
     }
     @media (max-width:767px){
@@ -1755,7 +1756,11 @@ border-top-left-radius: 5px;
   margin: 0 2px;
   width: 25px;
   height: 25px;
-  background-color: #A2D068;
+  transition: 0.4s;
+  img{
+    width: 100%;
+    object-fit: contain ;
+  }
 }
 
 .tab__wrapp{
