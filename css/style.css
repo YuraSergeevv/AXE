@@ -330,7 +330,7 @@ li.counter li:before {
   border-radius: 50%;
   fill: #ffffff;
   transition: 0.4s;
-  background-image: url(/img/svg/x.svg);
+  background-image: url("../img/svg/x.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: contain;
@@ -694,7 +694,7 @@ li.counter li:before {
   border: 1px solid #000000;
   transition: all 0.5s;
   opacity: 0;
-  background-image: url(/img/icons/check-h.svg);
+  background-image: url("../img/icons/check-h.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -710,7 +710,7 @@ li.counter li:before {
 .check__block .checkbox:checked + .checkbox__label::before {
   transition: 0.4s;
   background-color: #E30613;
-  background-image: url(/img/icons/check-a.svg);
+  background-image: url("../img/icons/check-a.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -963,7 +963,7 @@ input::-webkit-inner-spin-button {
   height: 18px;
   left: calc(50% - 9px);
   top: calc(50% - 9px);
-  background-image: url(/img/select-arrow.svg);
+  background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
