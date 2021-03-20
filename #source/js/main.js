@@ -418,11 +418,10 @@ $(document).ready(function () {
         }
     });
 
-
     if (window.width() <= 1024) { // проверяешь расширении
         //.div - это куда нужно переместить
         // .titleProduct - что нужно переместить 
-        $('.card__item-column-l').prepend('card__item__title-block');
+        $('.card__item-column-l').prepend('.card__item__title-block');
     }
 
 });
