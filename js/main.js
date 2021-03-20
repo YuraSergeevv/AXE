@@ -2,24 +2,49 @@ $(document).ready(function () {
 
 
 
-    $('.menu__btn').on('click', function () {
+    $('.menu__btn').on('click tochend', function () {
         $('.menu__row').toggleClass('active')
         $('.menu__btn').toggleClass('pressed')
     })
 
-    $('.menu__link').on('click', function () {
+    $('.menu__link').on('click tochend', function () {
         $('.menu__row').removeClass('active')
         $('.menu__btn').removeClass('pressed')
     })
 
+
+
+    $('.axe-group').each(function () {
+        let tog = $(this).find('.slider__product');
+        $(this).find('.axe-block').on('click tochend', function () {
+            $(this).find('.axe-arrow').toggleClass('axe-arrow-on ')
+            tog.toggleClass('slider__product-on')
+        })
+    });
+
+
+    $('.menu__item').each(function () {
+        let tog = $(this).find('.drop__list');
+        tog.hide(1);
+        $(this).find('.ml_arrow').on('click tochend', function () {
+            tog.slideToggle(500);
+        })
+    });
+
+    // $('.axe-group').each(function () {
+    //     let tog = $(this).find('.slider__product');
+    //     $(this).find('.axe-block').on('click tochend', function () {
+    //         tog.toggle(500);
+    //     })
+    // });
     $('.trapezoid').each(function () {
 
         $(this).on('click tochend', function () {
             $('.trapezoid').removeClass('trapezoid-active')
             $(this).toggleClass('trapezoid-active')
             let tab = "." + this.id;
-            $(".tab").hide(1);
-            $(tab).show(500);
+            $(".tab").slideUp(1);
+            $(tab).slideDown(500);
         })
     });
 
@@ -39,6 +64,9 @@ $(document).ready(function () {
             },
         ]
     });
+
+
+
 
 
     $('.slider__product').slick({
@@ -122,12 +150,6 @@ $(document).ready(function () {
 
     });
 
-    $('.axe-group').each(function () {
-        let tog = $(this).find('.slider__product');
-        $(this).find('.axe-block').on('click tochend', function () {
-            tog.toggle(500);
-        })
-    });
 
 
 
@@ -161,31 +183,6 @@ $(document).ready(function () {
 
 
 
-    // $('.card__item-slider').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     vertical: true,
-    //     verticalSwiping: true,
-    // });
-
-
-
-    // $('.slider-for').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: 'card__item-slider'
-    // });
-    // $('.card__item-slider').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.slider-for',
-    //     //  centerMode: true,
-    //     focusOnSelect: true,
-    //     vertical: true,
-    //     verticalSwiping: true,
-    // });
 
 
 
@@ -226,16 +223,6 @@ $(document).ready(function () {
             $('.fslider-nav').slick('unslick');
         }
     });
-
-
-    // $('.axe-group').each(function () {
-    //     let tog = $(this).find('.slider__product')
-    //     $(this).find('.axe-block').on('click tochend', function () {
-    //         tog.classList.toggle('slider__product-active');
-    //     })
-    // });
-
-
 
 
     const rangeSlider = document.getElementById('range-slider');

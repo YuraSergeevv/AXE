@@ -44,13 +44,13 @@
             </div>
             <div class="like-basket__block">
                 <div class="menu__btn"><span></span></div>
-                <div class="icon__like">
+                <a href="#" class="icon__like">
                     <span class="like__counter counter">0</span>
-                </div>
+                </a>
                 <div class="basket__block">
-                    <div class="icon__basket">
+                    <a href="#" class="icon__basket">
                         <span class="basket__counter counter">1</span>
-                    </div>
+                    </a>
                     <span class="basket__text">В корзине<span class="light-red"> 2000 </span>р.</span>
                 </div>
             </div>
@@ -62,21 +62,42 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Назначение</a></li>
+                        <li class="menu__item">
+                            <span> <a href="#" class="menu__link"><span class="ml_burger"></span>Каталог</a><span
+                                    class="ml_arrow ml_arrow-b"><svg class="icon">
+                                        <use xlink:href="img/svg/sprite.svg#arrow-link"></use>
+                                    </svg></span> </span>
+                            <ul class="menu__list drop__list">
+                                <li class="menu__item"><a href="#" class="menu__link">Спортивные</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Уход за глазами</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Защита для глаз</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><span><a href="#" class="menu__link">Назначение
+                                </a> <span class="ml_arrow"><svg class="icon">
+                                        <use xlink:href="img/svg/sprite.svg#arrow-link"></use>
+                                    </svg></span></span>
+                            <ul class="menu__list drop__list">
+                                <li class="menu__item"><a href="#" class="menu__link">Солнцезащитные очки</a>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">Спортивные</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Уход за глазами</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Защита для глаз</a></li>
+                            </ul>
+                        </li>
                         <li class="menu__item"><a href="#" class="menu__link">О компании </a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="like-basket__block">
-                    <div class="icon__like">
+                    <a href="#" class="icon__like">
                         <span class="like__counter counter">0</span>
-                    </div>
+                    </a>
                     <div class="basket__block">
-                        <div class="icon__basket">
+                        <a href="#" class="icon__basket">
                             <span class="basket__counter counter">1</span>
-                        </div>
+                        </a>
                         <span class="basket__text">В корзине<span class="light-red"> 2000 </span>р.</span>
                     </div>
                 </div>
@@ -159,7 +180,7 @@
                     <p class="footer__text">Подпишитесь! Новинки, скидки, предложения! </p>
                     <form action="#" method="get">
                         <input class="footer__input" type="email" placeholder="Введите Ваш e-mail">
-                        <input class="footer__submit" type="submit" value="Отправить">
+                        <button class="footer__submit">Отправить</button>
                     </form>
                 </div>
                 <span class="bg-center">1936</span>
