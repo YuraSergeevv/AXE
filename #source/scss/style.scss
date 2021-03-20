@@ -413,7 +413,9 @@ textarea {
 .slick-track{ 
   display: flex;}
 /* Слайд */
-.slick-slide{}
+.slick-slide{
+  z-index: 30;
+}
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */

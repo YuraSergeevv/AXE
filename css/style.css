@@ -1327,6 +1327,7 @@ input::-webkit-inner-spin-button {
 }
 
 .menu__row {
+  z-index: 100;
   display: flex;
   justify-content: space-between;
 }
@@ -1910,6 +1911,10 @@ textarea.error {
 }
 
 /* Слайд */
+.slick-slide {
+  z-index: 30;
+}
+
 /* Слайд активный (показывается) */
 /* Слайд основной */
 /* Слайд по центру */
