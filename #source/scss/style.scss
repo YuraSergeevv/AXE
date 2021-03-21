@@ -737,6 +737,7 @@ color: #000000;
 .btn {
   min-width: 180px;
   transition: 0.4s;
+  text-transform: uppercase;
   &:hover{
     transition: 0.4s;
     background-color: $light_red;

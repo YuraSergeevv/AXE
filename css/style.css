@@ -391,7 +391,7 @@ li.counter li:before {
   line-height: 1.5;
   color: #E30613;
   text-align: center;
-  padding: 4px 10px;
+  padding: 8px 5px;
   min-width: 220px;
   border: 1px solid #E30613;
   margin: 0 auto;
@@ -2260,6 +2260,7 @@ textarea.error {
 .btn {
   min-width: 180px;
   transition: 0.4s;
+  text-transform: uppercase;
 }
 .btn:hover {
   transition: 0.4s;
