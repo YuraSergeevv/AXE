@@ -324,7 +324,7 @@ li.counter li:before {
   color: #000000;
 }
 
-.fancybox-button {
+.fancybox-close-small {
   margin: 20px 20px 0 0;
   background-color: #E30613;
   border-radius: 50%;
@@ -335,10 +335,10 @@ li.counter li:before {
   background-position: center;
   background-repeat: contain;
 }
-.fancybox-button svg {
+.fancybox-close-small svg {
   display: none;
 }
-.fancybox-button:hover {
+.fancybox-close-small:hover {
   transition: 0.4s;
   background-color: #C6000C;
 }
@@ -584,6 +584,141 @@ li.counter li:before {
 .tenns {
   text-transform: initial;
   color: #61C4BC;
+}
+
+.check__block {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.check__block .checkbox {
+  display: none;
+}
+.check__block .checkbox__label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  transition: 0.4s all;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 35px;
+}
+.check__block .checkbox__label .under {
+  position: absolute;
+  left: 30px;
+  bottom: -15px;
+  font-size: 14px;
+  color: #575757;
+  text-decoration: none;
+  text-transform: initial;
+}
+.check__block .checkbox__label .man, .check__block .checkbox__label .ladys, .check__block .checkbox__label .unisex, .check__block .checkbox__label .kids, .check__block .checkbox__label .tenns {
+  font-family: Oswald;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  min-width: 60px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.check__block .checkbox__label.man-s, .check__block .checkbox__label .man-s {
+  text-transform: initial;
+  color: #3185E4;
+}
+.check__block .checkbox__label.ladys-s, .check__block .checkbox__label .ladys-s {
+  text-transform: initial;
+  color: #DA7292;
+}
+.check__block .checkbox__label.unisex-s, .check__block .checkbox__label .unisex-s {
+  text-transform: initial;
+  color: #E1A933;
+}
+.check__block .checkbox__label.kids-s, .check__block .checkbox__label .kids-s {
+  text-transform: initial;
+  color: #A2D068;
+}
+.check__block .checkbox__label.tenns-s, .check__block .checkbox__label .tenns-s {
+  text-transform: initial;
+  color: #61C4BC;
+}
+.check__block .checkbox__label.tenns-s, .check__block .checkbox__label .new-s {
+  text-transform: initial;
+  color: #C6000C;
+}
+.check__block .checkbox__label .man {
+  background-color: #3185E4;
+}
+.check__block .checkbox__label .ladys {
+  background-color: #DA7292;
+}
+.check__block .checkbox__label .unisex {
+  background-color: #E1A933;
+}
+.check__block .checkbox__label.unnone {
+  text-decoration: none;
+  text-transform: initial;
+}
+.check__block .checkbox__label .kids {
+  background-color: #A2D068;
+}
+.check__block .checkbox__label .tenns {
+  background-color: #61C4BC;
+}
+.check__block .checkbox__label .new {
+  background-color: #C6000C;
+}
+.check__block .checkbox__label::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  border: 1px solid #000000;
+}
+.check__block .checkbox__label::before {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #000000;
+  transition: all 0.5s;
+  opacity: 0;
+  background-image: url("../img/icons/check-h.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.check__block .checkbox__label:hover::before {
+  transition: 0.4s;
+  opacity: 1;
+}
+.check__block .checkbox__label:hover::after {
+  transition: 0.4s;
+  border-color: #E30613;
+}
+.check__block .checkbox:checked + .checkbox__label::before {
+  transition: 0.4s;
+  background-color: #E30613;
+  background-image: url("../img/icons/check-a.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  opacity: 1;
+}
+.check__block .checkbox:checked + .checkbox__label::after {
+  border: none;
 }
 
 .check__block {
@@ -1936,7 +2071,7 @@ textarea.error {
   margin-bottom: 0;
   position: absolute;
   opacity: 0;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 .axe-group .slider__product-on {
   height: auto;
@@ -1944,7 +2079,7 @@ textarea.error {
   margin-bottom: 130px;
   position: relative;
   opacity: 1;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .axe-block {
@@ -5164,8 +5299,14 @@ textarea.error {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 400px) {
+  .contact__city-wrapp {
+    display: none;
+  }
+}
 
 .contact__city {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5192,13 +5333,20 @@ textarea.error {
 }
 @media (max-width: 400px) {
   .contact__city {
-    display: none;
+    width: 100%;
+    margin: 0;
   }
 }
 
 .city-active {
   color: #FFFFFF;
   background-color: #E30613;
+}
+@media (max-width: 400px) {
+  .city-active {
+    color: initial;
+    background-color: #efefef;
+  }
 }
 
 .select-city {

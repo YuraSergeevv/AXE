@@ -19,8 +19,10 @@ $(document).ready(function () {
     $('.axe-group').each(function () {
         let tog = $(this).find('.slider__product');
         $(this).find('.axe-block').on('click tochend', function () {
-            $(this).find('.axe-arrow').toggleClass('axe-arrow-on ')
-            tog.toggleClass('slider__product-on')
+            $(this).find('.axe-arrow').toggleClass('axe-arrow-on ');
+            tog.toggleClass('slider__product-on');
+            $('.slider__product-on').slick('resize');
+            return false
         })
     });
 
@@ -42,13 +44,33 @@ $(document).ready(function () {
     $('.trapezoid').each(function () {
 
         $(this).on('click tochend', function () {
-            $('.trapezoid').removeClass('trapezoid-active')
-            $(this).toggleClass('trapezoid-active')
-            let tab = "." + this.id;
-            $(".tab").slideUp(1);
-            $(tab).slideDown(500);
+            if (!$(this).hasClass("trapezoid-active")) {
+                $('.trapezoid').removeClass('trapezoid-active');
+                $(this).toggleClass('trapezoid-active');
+                let tab = "." + this.id;
+                $(".tab").slideUp(1);
+                $(tab).slideDown(500);
+                return false;
+            }
+            else return false;
         })
     });
+
+    $('.contact__city').each(function () {
+        $(this).on('click tochend', function () {
+            if (!$(this).hasClass("city-active")) {
+                $('.contact__city').removeClass('city-active');
+                $(this).toggleClass('city-active');
+                let tab = "." + this.id;
+                $(".city").slideUp(1);
+                $(tab).slideDown(500);
+                return falses;
+            }
+            else return false;
+        })
+
+    });
+
 
 
 
