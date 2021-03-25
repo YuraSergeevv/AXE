@@ -45,5 +45,5 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
-  background: #fff url(../img/svg/close.svg) 50% 50%/65% no-repeat;
+  background: #fff url(..img/svg/close.svg) 50% 50%/65% no-repeat;
 }

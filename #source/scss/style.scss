@@ -408,6 +408,7 @@ textarea {
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+  width: 100%;
 }
 /* Лента слайдов */
 .slick-track{ 
@@ -445,6 +446,7 @@ textarea {
   position: relative;
   & .slider__product{
     height: 0;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 0;
     position: absolute;
